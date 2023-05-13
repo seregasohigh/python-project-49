@@ -9,7 +9,7 @@ def welcome():
 def main():
     welcome()
     print(cli.welcome_user())
-    
+
 
 if __name__ == '__main__':
     main()

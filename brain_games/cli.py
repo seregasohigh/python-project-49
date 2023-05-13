@@ -1,11 +1,11 @@
 from prompt_toolkit import prompt
 
 
+# приветствуем пользователя по имени
 def welcome_user() -> str:
     while True:
-        #приветствуем пользователя по имени
         name = prompt('May I have your name?')
-        #проверка на ввод пустого имени
+# проверка на ввод пустого имени
         if name.strip():
             return f'Hello, {name}!'
         else:
