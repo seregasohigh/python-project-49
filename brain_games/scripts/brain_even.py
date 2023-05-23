@@ -13,6 +13,7 @@ def main():
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
     print('Answer "yes" if the number is even, otherwise answer "no".')
+    success = True
     for _ in range(3):  # указываю что всего 3 раунда
         num = randint(1, 100)  # ноль не может быть загадан
         print(f'Question: {num}')
@@ -28,9 +29,11 @@ def main():
             print(f"'{answer}' is wrong answer ;(. Correct answer was "
                   f"{'yes' if is_even(num) else 'no'}.")
             print(f"Let's try again, {name}!")
+            success = False
             break
     # если без ошибок ответили, то выводим поздравление игроку
-    return (f'Congratulations, {name}!')
+    if success:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':

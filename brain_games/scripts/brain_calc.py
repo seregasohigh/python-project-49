@@ -43,8 +43,9 @@ def main():
         if answer == result:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(.\
-             Correct answer was '{result}'. Let's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(."
+                  f"Correct answer was '{result}'."
+                  f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
 

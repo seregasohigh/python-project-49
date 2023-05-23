@@ -37,8 +37,9 @@ def main():
         if answer == correct_answer_str:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(.\
-Correct answer was '{correct_answer_str}'. Let's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(."
+                  f"Correct answer was '{correct_answer_str}'."
+                  f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
 

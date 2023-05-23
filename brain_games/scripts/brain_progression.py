@@ -45,8 +45,9 @@ def main():
         if check_answer(answer, hidden_value):
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(.\
-Correct answer was '{hidden_value}'. Let's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(."
+                  f"Correct answer was '{hidden_value}'."
+                  f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
 
