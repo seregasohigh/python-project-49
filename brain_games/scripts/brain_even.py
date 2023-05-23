@@ -30,8 +30,7 @@ def main():
             print(f"Let's try again, {name}!")
             break
     # если без ошибок ответили, то выводим поздравление игроку
-    else:
-        return (f'Congratulations, {name}!')
+    return (f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':
