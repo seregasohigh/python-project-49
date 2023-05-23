@@ -10,7 +10,7 @@ def is_even(num):
 
 def main():
     print('Welcome to the Brain Games!')
-    name = prompt.string('May i have your name? ')
+    name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
     print('Answer "yes" if the number is even, otherwise answer "no".')
     for _ in range(3):  # указываю что всего 3 раунда
